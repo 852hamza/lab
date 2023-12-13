@@ -19,7 +19,7 @@ jobs:
 
       # Fetch the secret from GitHub Secrets
       - name: Fetch Secret
-        run: echo "MySecret=${{ secrets.YOUR_SECRET_NAME }}" >> $GITHUB_ENV
+        run: echo "MySecret=${{ secrets.fetch }}" >> $GITHUB_ENV
 
       # Display the secret in the pipeline
       - name: Display Secret
